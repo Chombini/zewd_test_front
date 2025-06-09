@@ -1,5 +1,5 @@
 import { useState, useEffect, type FormEvent } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { Link,  } from "react-router-dom"
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Input } from "../components/ui/input"
@@ -10,7 +10,7 @@ import { ArrowLeft, CheckCircle } from "lucide-react"
 export default function CheckoutPage() {
   const [orderData, setOrderData] = useState<any>(null)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
